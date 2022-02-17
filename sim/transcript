@@ -1,0 +1,166 @@
+# Reading C:/modeltech64_10.6d/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.6d Feb 24 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# OpenFile C:/Users/Administrator/Desktop/SANRC/sim/SANRC_SIM.mpf
+# Loading project SANRC_SIM
+# Compile of SANRC_tb.v was successful.
+# Compile of DRST.v was successful.
+# Compile of IISC.v was successful.
+# Compile of macro.v was successful.
+# Compile of OFC_MIC_TEST.v was successful.
+# Compile of SANRC.v was successful.
+# Compile of ANC.v was successful.
+# Compile of ANC_INP.v was successful.
+# Compile of ANC_LMS.v was successful.
+# Compile of ANCC.v was successful.
+# Compile of INP.v was successful.
+# Compile of LMS.v was successful.
+# Compile of OFZ.v was successful.
+# Compile of OFZC.v was successful.
+# Compile of AR.v was successful.
+# Compile of ARC.v was successful.
+# Compile of AS.v was successful.
+# Compile of ASC.v was successful.
+# Compile of i2c_dri.v was successful.
+# Compile of i2c_reg_cfg.v was successful with warnings.
+# Compile of wm8978_config.v was successful.
+# Compile of WMC.v was successful.
+# Compile of MIIS.v was successful.
+# Compile of dn_rom.v was successful.
+# Compile of pll_clk.v was successful.
+# Compile of sn_ram.v was successful.
+# Compile of sz_ram.v was successful.
+# Compile of vn_rom.v was successful.
+# Compile of wz_ram.v was successful.
+# Compile of xn_ram.v was successful.
+# Compile of 220model.v was successful.
+# Compile of altera_mf.v was successful.
+# Compile of en_rom.v was successful.
+# Compile of xn_rom.v was successful.
+# 34 compiles, 0 failed with no errors.
+# Compile of SANRC_tb.v was successful.
+# Compile of DRST.v was successful.
+# Compile of IISC.v was successful.
+# Compile of macro.v was successful.
+# Compile of OFC_MIC_TEST.v was successful.
+# Compile of SANRC.v was successful.
+# Compile of ANC.v was successful.
+# Compile of ANC_INP.v was successful.
+# Compile of ANC_LMS.v was successful.
+# Compile of ANCC.v was successful.
+# Compile of INP.v was successful.
+# Compile of LMS.v was successful.
+# Compile of OFZ.v was successful.
+# Compile of OFZC.v was successful.
+# Compile of AR.v was successful.
+# Compile of ARC.v was successful.
+# Compile of AS.v was successful.
+# Compile of ASC.v was successful.
+# Compile of i2c_dri.v was successful.
+# Compile of i2c_reg_cfg.v was successful with warnings.
+# Compile of wm8978_config.v was successful.
+# Compile of WMC.v was successful.
+# Compile of MIIS.v was successful.
+# Compile of dn_rom.v was successful.
+# Compile of pll_clk.v was successful.
+# Compile of sn_ram.v was successful.
+# Compile of sz_ram.v was successful.
+# Compile of vn_rom.v was successful.
+# Compile of wz_ram.v was successful.
+# Compile of xn_ram.v was successful.
+# Compile of 220model.v was successful.
+# Compile of altera_mf.v was successful.
+# Compile of en_rom.v was successful.
+# Compile of xn_rom.v was successful.
+# 34 compiles, 0 failed with no errors.
+vsim -gui work.SANRC_tb -novopt
+# vsim -gui work.SANRC_tb -novopt 
+# Start time: 17:08:46 on Dec 10,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC_tb
+# Loading work.SANRC_tb
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC
+# Loading work.SANRC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.WMC
+# Loading work.WMC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.wm8978_config
+# Loading work.wm8978_config
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.i2c_reg_cfg
+# Loading work.i2c_reg_cfg
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.i2c_dri
+# Loading work.i2c_dri
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ARC
+# Loading work.ARC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.AR
+# Loading work.AR
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ASC
+# Loading work.ASC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.AS
+# Loading work.AS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC
+# Loading work.ANC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANCC
+# Loading work.ANCC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZ
+# Loading work.OFZ
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZC
+# Loading work.OFZC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.LMS
+# Loading work.LMS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.INP
+# Loading work.INP
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.vn_rom
+# Loading work.vn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.altsyncram
+# Loading work.altsyncram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC_INP
+# Loading work.ANC_INP
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC_LMS
+# Loading work.ANC_LMS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.wz_ram
+# Loading work.wz_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.sz_ram
+# Loading work.sz_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.sn_ram
+# Loading work.sn_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.xn_ram
+# Loading work.xn_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.MIIS
+# Loading work.MIIS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.IISC
+# Loading work.IISC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZ_MIC_TEST
+# Loading work.OFZ_MIC_TEST
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.dn_rom
+# Loading work.dn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.xn_rom
+# Loading work.xn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.en_rom
+# Loading work.en_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.DRST
+# Loading work.DRST
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.altsyncram_body
+# Loading work.altsyncram_body
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'Key0'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v(47).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/rtl/ANC/OFZ/OFZ.v(125): [PCDPC] - Port size (11) does not match connection size (13) for port 'address'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/par/ipcore/vn_rom.v(40).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC/u_ANC/u_OFZ/u_vn_rom File: C:/Users/Administrator/Desktop/SANRC/par/ipcore/vn_rom.v
+do C:/Users/Administrator/Desktop/SANRC/sim/ANC.do
+run
+# End time: 17:09:20 on Dec 10,2021, Elapsed time: 0:00:34
+# Errors: 0, Warnings: 3

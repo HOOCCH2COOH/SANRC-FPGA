@@ -1,0 +1,29 @@
+
+
+C:/Users/Administrator/Desktop/SANRC/rtl/AUDIO/AR.v
+
+Nov 12 04PM:31:21>: MegaWizard Plug-In Manager does not recognize C:/Users/Administrator/Desktop/SANRC/rtl/AUDIO/AR.v as a wizard-generated
+custom megafunction variation.
+
+Do you want to use a wizard to overwrite it?
+
+C:/Users/Administrator/Desktop/SANRC/rtl/AUDIO/WMC.v
+
+Nov 29 11AM:02:01>: MegaWizard Plug-In Manager does not recognize C:/Users/Administrator/Desktop/SANRC/rtl/AUDIO/WMC.v as a wizard-generated
+custom megafunction variation.
+
+Do you want to use a wizard to overwrite it?
+
+C:/Users/Administrator/Desktop/SANRC/rtl/AUDIO/WMC.v
+
+Nov 29 11AM:02:05>: MegaWizard Plug-In Manager does not recognize C:/Users/Administrator/Desktop/SANRC/rtl/AUDIO/WMC.v as a wizard-generated
+custom megafunction variation.
+
+Do you want to use a wizard to overwrite it?
+
+C:/Users/Administrator/Desktop/SANRC/rtl/AUDIO/ASC.v
+
+Jan 17 05PM:07:10>: MegaWizard Plug-In Manager does not recognize C:/Users/Administrator/Desktop/SANRC/rtl/AUDIO/ASC.v as a wizard-generated
+custom megafunction variation.
+
+Do you want to use a wizard to overwrite it?
