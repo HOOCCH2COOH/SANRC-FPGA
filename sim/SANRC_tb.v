@@ -30,13 +30,13 @@ SANRC u_SANRC(
 	.aud_sda          (),
 
 	.mic_sd_l         (),
-	.mic_bclk_l       (),
-	.mic_lrc_l        (),
+	.mic_sck_l       (),
+	.mic_ws_l        (),
 	.mic_chan_l       (),
 	
 	.mic_sd_r         (),
-	.mic_bclk_r       (),
-	.mic_lrc_r        (),
+	.mic_sck_r       (),
+	.mic_ws_r        (),
 	.mic_chan_r       (),
 	
 	.mic_sd_l_Logic   (),
@@ -45,6 +45,7 @@ SANRC u_SANRC(
 	
 	.Key0             ('b1)
 	);          
+
 
 
 endmodule

@@ -33,8 +33,8 @@ parameter  WL           = 6'd24;        // word length音频字长参数设置
 
 //parameter define
 localparam REG_NUM      = 5'd19;        // 总共需要配置的寄存器个数
-localparam PHONE_VOLUME = 6'd20;        // 耳机输出音量大小参数（0~63）
-localparam SPEAK_VOLUME = 6'd00;        // 喇叭输出音量大小参数（0~63）
+localparam PHONE_VOLUME = 6'd10;       // 耳机输出音量大小参数（0~63）
+localparam SPEAK_VOLUME = 6'd20;        // 喇叭输出音量大小参数（0~63）
 
 //reg define
 reg    [1:0]  wl            ;           // word length音频字长参数定义

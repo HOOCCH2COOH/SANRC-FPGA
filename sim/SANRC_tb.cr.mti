@@ -164,6 +164,13 @@ Top level modules:
 	sld_virtual_jtag_basic
 	altsource_probe
 
+} {} {}} C:/Users/Administrator/Desktop/SANRC/par/ipcore/en_rom.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/par/ipcore/en_rom.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module en_rom
+
+Top level modules:
+	en_rom
+
 } {} {}} C:/Users/Administrator/Desktop/SANRC/rtl/MIC/MIIS.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/rtl/MIC/MIIS.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 -- Compiling module MIIS
@@ -271,6 +278,13 @@ Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 Top level modules:
 	AR
 
+} {} {}} C:/Users/Administrator/Desktop/SANRC/sim/DRST.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/sim/DRST.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module DRST
+
+Top level modules:
+	DRST
+
 } {} {}} C:/Users/Administrator/Desktop/SANRC/rtl/key_debounce.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/rtl/key_debounce.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 -- Compiling module key_debounce
@@ -299,6 +313,20 @@ Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 Top level modules:
 	INP
 
+} {} {}} C:/Users/Administrator/Desktop/SANRC/sim/OFC_MIC_TEST.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/sim/OFC_MIC_TEST.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module OFZ_MIC_TEST
+
+Top level modules:
+	OFZ_MIC_TEST
+
+} {} {}} C:/Users/Administrator/Desktop/SANRC/sim/IISC.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/sim/IISC.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module IISC
+
+Top level modules:
+	IISC
+
 } {} {}} C:/Users/Administrator/Desktop/SANRC/par/dn_rom.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/par/dn_rom.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 -- Compiling module dn_rom
@@ -320,6 +348,13 @@ Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 Top level modules:
 	ASC
 
+} {} {}} C:/Users/Administrator/Desktop/SANRC/par/ipcore/dn_rom.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/par/ipcore/dn_rom.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module dn_rom
+
+Top level modules:
+	dn_rom
+
 } {} {}} C:/Users/Administrator/Desktop/SANRC/rtl/ANC/ANC_INP.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/rtl/ANC/ANC_INP.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 -- Compiling module ANC_INP
@@ -334,15 +369,11 @@ Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 Top level modules:
 	OFZC
 
+} {} {}} C:/Users/Administrator/Desktop/SANRC/sim/macro.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/sim/macro.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+
 } {} {}} C:/Users/Administrator/Desktop/SANRC/rtl/macro.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/rtl/macro.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
-
-} {} {}} C:/Users/Administrator/Desktop/SANRC/rtl/ANC/ANC.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/rtl/ANC/ANC.v
-Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module ANC
-
-Top level modules:
-	ANC
 
 } {} {}} C:/Users/Administrator/Desktop/SANRC/par/ipcore/vn_rom.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/par/ipcore/vn_rom.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
@@ -358,20 +389,26 @@ Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 Top level modules:
 	pll_clk
 
-} {} {}} C:/Users/Administrator/Desktop/SANRC/rtl/AUDIO/i2c_reg_cfg.v {2 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/rtl/AUDIO/i2c_reg_cfg.v
-Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module i2c_reg_cfg
-** Warning: C:/Users/Administrator/Desktop/SANRC/rtl/AUDIO/i2c_reg_cfg.v(59): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-
-Top level modules:
-	i2c_reg_cfg
-
 } {} {}} C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 -- Compiling module SANRC_tb
 
 Top level modules:
 	SANRC_tb
+
+} {} {}} C:/Users/Administrator/Desktop/SANRC/rtl/ANC/ANC.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/rtl/ANC/ANC.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module ANC
+
+Top level modules:
+	ANC
+
+} {} {}} C:/Users/Administrator/Desktop/SANRC/par/ipcore/xn_rom.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/par/ipcore/xn_rom.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module xn_rom
+
+Top level modules:
+	xn_rom
 
 } {} {}} C:/Users/Administrator/Desktop/SANRC/rtl/DRST.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/rtl/DRST.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
@@ -394,13 +431,6 @@ Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 Top level modules:
 	audio_ADC_tb
 
-} {} {}} C:/Users/Administrator/Desktop/SANRC/rtl/ANC/ANCC.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/rtl/ANC/ANCC.v
-Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
--- Compiling module ANCC
-
-Top level modules:
-	ANCC
-
 } {} {}} C:/Users/Administrator/Desktop/SANRC/par/ipcore/sz_ram.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/par/ipcore/sz_ram.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 -- Compiling module sz_ram
@@ -408,11 +438,25 @@ Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 Top level modules:
 	sz_ram
 
+} {} {}} C:/Users/Administrator/Desktop/SANRC/rtl/ANC/ANCC.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/rtl/ANC/ANCC.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module ANCC
+
+Top level modules:
+	ANCC
+
 } {} {}} C:/Users/Administrator/Desktop/SANRC/rtl/ANC/OFZ/OFZ.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/rtl/ANC/OFZ/OFZ.v
 Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
 -- Compiling module OFZ
 
 Top level modules:
 	OFZ
+
+} {} {}} C:/Users/Administrator/Desktop/SANRC/sim/SANRC.v {1 {vlog -work work -vopt -stats=none C:/Users/Administrator/Desktop/SANRC/sim/SANRC.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module SANRC
+
+Top level modules:
+	SANRC
 
 } {} {}}

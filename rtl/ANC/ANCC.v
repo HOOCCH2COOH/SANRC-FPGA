@@ -17,7 +17,7 @@ module ANCC
 (
     input                    clk, 
     input                    rst_n,
-	 
+	
 	 input                    audio_rx_down,   //xn, en finished flag
 	 
 	 //inp_lms

@@ -4,7 +4,7 @@ module OFZ_MIC_TEST (
     //system reset
     input                  rst_n,   
 	 input       [11:0]     cyc_cnt,
-	 input                  OFZ_ok,
+	 input                  OFZ_ok, /*次级通道拟合完成标志位*/
     //wm8978 interface
     input                  bclk, 
     input                  lrc,  
@@ -33,6 +33,7 @@ wire        [15:0] dn_data;
 wire signed [23:0] mic_left_i;
 wire signed [23:0] mic_right_i;
 
+// OFZ阶段不出声；ANC阶段模拟混频噪声
 assign  mic_left_i  = ~OFZ_ok ? 
 							'd0:
 							 {xn_data[15],
@@ -42,14 +43,14 @@ assign  mic_left_i  = ~OFZ_ok ?
 							 xn_data[15:0],
 							 4'd0};
 							 
-							 
+// OFZ阶段为vn通过sz得到的dn；ANC阶段为en					 
 assign  mic_right_i = ~OFZ_ok ? 
 							{dn_data[15],
 							 dn_data[15],
 							 dn_data[15],
 							 dn_data[15],
 							 dn_data[15:0],
-							 4'd0}                             :
+							 4'd0}:
 							 {en_data[15],
 							 en_data[15],
 							 en_data[15],

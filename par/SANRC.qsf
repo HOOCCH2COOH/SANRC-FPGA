@@ -37,7 +37,7 @@
 
 
 set_global_assignment -name FAMILY "Cyclone IV E"
-set_global_assignment -name DEVICE EP4CE10F17C8
+set_global_assignment -name DEVICE EP4CE10E22C8
 set_global_assignment -name TOP_LEVEL_ENTITY SANRC
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:37:08  SEPTEMBER 13, 2021"
@@ -46,23 +46,49 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
-set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_D5 -to aud_bclk
-set_location_assignment PIN_C6 -to aud_dacdat
-set_location_assignment PIN_E6 -to aud_lrc
-set_location_assignment PIN_E7 -to aud_mclk
-set_location_assignment PIN_D8 -to aud_scl
-set_location_assignment PIN_C8 -to aud_sda
-set_location_assignment PIN_E1 -to sys_clk
-set_location_assignment PIN_M1 -to sys_rst_n
+set_location_assignment PIN_55 -to aud_bclk
+set_location_assignment PIN_53 -to aud_dacdat
+set_location_assignment PIN_58 -to aud_lrc
+set_location_assignment PIN_52 -to aud_mclk
+set_location_assignment PIN_51 -to aud_scl
+set_location_assignment PIN_50 -to aud_sda
+set_location_assignment PIN_88 -to sys_clk
+set_location_assignment PIN_39 -to sys_rst_n
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name ENABLE_SIGNALTAP ON
 set_global_assignment -name USE_SIGNALTAP_FILE output_files/stp1.stp
-set_location_assignment PIN_A11 -to mic_sd_l
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_instance_assignment -name IO_STANDARD "2.5 V" -to Key0
+set_instance_assignment -name IO_STANDARD "2.5 V" -to Triger_Logic
+set_instance_assignment -name IO_STANDARD "2.5 V" -to aud_bclk
+set_instance_assignment -name IO_STANDARD "2.5 V" -to aud_dacdat
+set_instance_assignment -name IO_STANDARD "2.5 V" -to aud_lrc
+set_instance_assignment -name IO_STANDARD "2.5 V" -to aud_mclk
+set_instance_assignment -name IO_STANDARD "2.5 V" -to aud_scl
+set_instance_assignment -name IO_STANDARD "2.5 V" -to aud_sda
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mic_sd_l_Logic
+set_instance_assignment -name IO_STANDARD "2.5 V" -to mic_sd_r_Logic
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sys_clk
+set_instance_assignment -name IO_STANDARD "2.5 V" -to sys_rst_n
+set_location_assignment PIN_38 -to Key0
+set_global_assignment -name VERILOG_FILE ../rtl/LED/LED.v
+set_global_assignment -name VERILOG_FILE EPCS/synthesis/submodules/qspi_inf_mux.v
+set_global_assignment -name VERILOG_FILE EPCS/synthesis/submodules/inf_sc_fifo_ser_data.v
+set_global_assignment -name VERILOG_FILE EPCS/synthesis/submodules/EPCS_intel_generic_serial_flash_interface_top_0.v
+set_global_assignment -name VERILOG_FILE EPCS/synthesis/submodules/EPCS_asmi_parallel_0.v
+set_global_assignment -name VERILOG_FILE EPCS/synthesis/submodules/avst_fifo.v
+set_global_assignment -name VERILOG_FILE EPCS/synthesis/submodules/altera_reset_synchronizer.v
+set_global_assignment -name VERILOG_FILE EPCS/synthesis/submodules/altera_reset_controller.v
+set_global_assignment -name VERILOG_FILE EPCS/synthesis/submodules/altera_avalon_sc_fifo.v
+set_global_assignment -name VERILOG_FILE EPCS/synthesis/EPCS.v
+set_global_assignment -name VERILOG_FILE ../rtl/UDS/SPI.v
+set_global_assignment -name VERILOG_FILE ../rtl/UDS/UDSC.v
+set_global_assignment -name VERILOG_FILE ../rtl/ANC/ANC_ALIT.v
 set_global_assignment -name VERILOG_FILE ../rtl/OFC_MIC_TEST.v
 set_global_assignment -name VERILOG_FILE ../rtl/DRST.v
 set_global_assignment -name VERILOG_FILE ../rtl/IISC.v
@@ -101,7 +127,6 @@ set_global_assignment -name HEX_FILE ../hex/dn_rom_sin.hex
 set_global_assignment -name HEX_FILE ../hex/vn_rom_noise_1.hex
 set_global_assignment -name HEX_FILE ../hex/dn_rom_noise_1.hex
 set_global_assignment -name HEX_FILE ../hex/dn_rom_noise.hex
-set_location_assignment PIN_B11 -to mic_sd_r
 set_global_assignment -name HEX_FILE ../hex/vn_rom_sin358.hex
 set_global_assignment -name HEX_FILE ../hex/dn_rom_sin358.hex
 set_global_assignment -name HEX_FILE ../hex/vn_rom_sin3581012.hex
@@ -109,25 +134,58 @@ set_global_assignment -name HEX_FILE ../hex/dn_rom_sin3581012.hex
 set_global_assignment -name HEX_FILE ../hex/vn_rom_noise0_8.hex
 set_global_assignment -name HEX_FILE ../hex/dn_rom_noise0_8.hex
 set_global_assignment -name HEX_FILE ../hex/vn_rom_noise.hex
-set_location_assignment PIN_A9 -to mic_sd_l_Logic
-set_location_assignment PIN_B9 -to mic_sd_r_Logic
-set_location_assignment PIN_A13 -to mic_bclk_l
-set_location_assignment PIN_B13 -to mic_bclk_r
-set_location_assignment PIN_B10 -to mic_chan_r
-set_location_assignment PIN_A10 -to mic_chan_l
-set_location_assignment PIN_A12 -to mic_lrc_l
-set_location_assignment PIN_B12 -to mic_lrc_r
-set_location_assignment PIN_L2 -to Triger_Logic
 set_global_assignment -name QIP_FILE ipcore/xn_rom.qip
 set_global_assignment -name HEX_FILE ../hex/xn_rom.hex
 set_global_assignment -name HEX_FILE ../hex/en_rom.hex
 set_global_assignment -name QIP_FILE ipcore/en_rom.qip
 set_global_assignment -name MIF_FILE "D:/06, Matlab/MIF/en_rom.mif"
-set_location_assignment PIN_E16 -to Key0
 set_global_assignment -name HEX_FILE ../hex/sz_ram.hex
 set_global_assignment -name HEX_FILE ../hex/xn_rom512.hex
 set_global_assignment -name HEX_FILE ../hex/en_rom512.hex
 set_global_assignment -name QIP_FILE ipcore/dn_rom.qip
 set_global_assignment -name HEX_FILE ../hex/vn_rom.hex
 set_global_assignment -name HEX_FILE ../hex/dn_rom.hex
+set_global_assignment -name QIP_FILE log.qip
+set_global_assignment -name QIP_FILE alit_exp.qip
+set_location_assignment PIN_128 -to led_0
+set_location_assignment PIN_129 -to led_1
+set_location_assignment PIN_84 -to falut_en1
+set_location_assignment PIN_83 -to mute_en1
+set_location_assignment PIN_49 -to falut_en2
+set_location_assignment PIN_42 -to mute_en2
+set_location_assignment PIN_59 -to mic_sck_ref
+set_location_assignment PIN_60 -to mic_ws_ref
+set_location_assignment PIN_64 -to mic_sd_ref
+set_location_assignment PIN_66 -to mic_sck_en1
+set_location_assignment PIN_67 -to mic_ws_en1
+set_location_assignment PIN_68 -to mic_sd_en1
+set_location_assignment PIN_70 -to mic_sck_en2
+set_location_assignment PIN_71 -to mic_ws_en2
+set_location_assignment PIN_72 -to mic_sd_en2
+set_location_assignment PIN_73 -to mic_sck_bn1
+set_location_assignment PIN_74 -to mic_ws_bn1
+set_location_assignment PIN_75 -to mic_sd_bn1
+set_location_assignment PIN_76 -to mic_sck_bn2
+set_location_assignment PIN_77 -to mic_ws_bn2
+set_location_assignment PIN_80 -to mic_sd_bn2
+set_location_assignment PIN_138 -to mic_sd_l_Logic
+set_location_assignment PIN_137 -to mic_sd_r_Logic
+set_location_assignment PIN_136 -to Triger_Logic
+set_location_assignment PIN_110 -to can_data[0]
+set_location_assignment PIN_111 -to can_data[1]
+set_location_assignment PIN_112 -to can_data[2]
+set_location_assignment PIN_113 -to can_data[3]
+set_location_assignment PIN_114 -to can_data[4]
+set_location_assignment PIN_115 -to can_data[5]
+set_location_assignment PIN_119 -to can_data[6]
+set_location_assignment PIN_120 -to can_data[7]
+set_location_assignment PIN_124 -to can_cs
+set_location_assignment PIN_125 -to can_rd
+set_location_assignment PIN_126 -to can_wr
+set_location_assignment PIN_127 -to can_clk
+set_location_assignment PIN_121 -to can_ale
+set_location_assignment PIN_104 -to can_en
+set_location_assignment PIN_106 -to can_int
+set_location_assignment PIN_105 -to can_rst
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name SLD_FILE db/stp1_auto_stripped.stp

@@ -1,0 +1,61 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 0 0 256 144)
+	(text "log" (rect 115 1 135 17)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 128 25 140)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "data[63..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "data[63..0]" (rect 4 30 76 47)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 96 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "clock" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "clock" (rect 4 46 39 63)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 96 64))
+	)
+	(port
+		(pt 256 48)
+		(output)
+		(text "result[63..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "result[63..0]" (rect 173 30 251 47)(font "Arial" (font_size 8)))
+		(line (pt 256 48)(pt 160 48)(line_width 3))
+	)
+	(drawing
+		(text "Clock cycles: 34 " (rect 150 82 402 179)(font "Arial" ))
+		(text "Double Precision " (rect 145 98 397 211)(font "Arial" ))
+		(text "Exponent width: 11 " (rect 133 114 384 243)(font "Arial" ))
+		(text "Mantissa width: 52 " (rect 136 130 388 275)(font "Arial" ))
+		(line (pt 96 32)(pt 160 32))
+		(line (pt 160 32)(pt 160 80))
+		(line (pt 96 80)(pt 160 80))
+		(line (pt 96 32)(pt 96 80))
+		(line (pt 0 0)(pt 256 0))
+		(line (pt 256 0)(pt 256 146))
+		(line (pt 0 146)(pt 256 146))
+		(line (pt 0 0)(pt 0 146))
+	)
+)

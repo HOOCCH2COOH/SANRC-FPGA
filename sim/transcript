@@ -37,7 +37,6 @@
 # Compile of wm8978_config.v was successful.
 # Compile of WMC.v was successful.
 # Compile of MIIS.v was successful.
-# Compile of dn_rom.v was successful.
 # Compile of pll_clk.v was successful.
 # Compile of sn_ram.v was successful.
 # Compile of sz_ram.v was successful.
@@ -48,7 +47,81 @@
 # Compile of altera_mf.v was successful.
 # Compile of en_rom.v was successful.
 # Compile of xn_rom.v was successful.
+# Compile of dn_rom.v was successful.
 # 34 compiles, 0 failed with no errors.
+vsim -gui work.SANRC_tb -novopt
+# vsim -gui work.SANRC_tb -novopt 
+# Start time: 21:34:58 on Jan 26,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC_tb
+# Loading work.SANRC_tb
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC
+# Loading work.SANRC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.WMC
+# Loading work.WMC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.wm8978_config
+# Loading work.wm8978_config
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.i2c_reg_cfg
+# Loading work.i2c_reg_cfg
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.i2c_dri
+# Loading work.i2c_dri
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ARC
+# Loading work.ARC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.AR
+# Loading work.AR
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ASC
+# Loading work.ASC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.AS
+# Loading work.AS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC
+# Loading work.ANC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANCC
+# Loading work.ANCC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZ
+# Loading work.OFZ
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZC
+# Loading work.OFZC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.LMS
+# Loading work.LMS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.INP
+# Loading work.INP
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.vn_rom
+# Loading work.vn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.altsyncram
+# Loading work.altsyncram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC_INP
+# Loading work.ANC_INP
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC_LMS
+# Loading work.ANC_LMS
+# ** Error: (vsim-3033) C:/Users/Administrator/Desktop/SANRC/rtl/ANC/ANC.v(165): Instantiation of 'ANC_ALIT' failed. The design unit was not found.
+#    Time: 0 ns  Iteration: 0  Instance: /SANRC_tb/u_SANRC/u_ANC File: C:/Users/Administrator/Desktop/SANRC/rtl/ANC/ANC.v
+#         Searched libraries:
+#             C:/Users/Administrator/Desktop/SANRC/sim/work
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.wz_ram
+# Loading work.wz_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.sz_ram
+# Loading work.sz_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.sn_ram
+# Loading work.sn_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.xn_ram
+# Loading work.xn_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.MIIS
+# Loading work.MIIS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.IISC
+# Loading work.IISC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZ_MIC_TEST
+# Loading work.OFZ_MIC_TEST
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.dn_rom
+# Loading work.dn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.xn_rom
+# Loading work.xn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.en_rom
+# Loading work.en_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.DRST
+# Loading work.DRST
+# Error loading design
+# End time: 21:35:00 on Jan 26,2023, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 1
 # Compile of SANRC_tb.v was successful.
 # Compile of DRST.v was successful.
 # Compile of IISC.v was successful.
@@ -72,7 +145,6 @@
 # Compile of wm8978_config.v was successful.
 # Compile of WMC.v was successful.
 # Compile of MIIS.v was successful.
-# Compile of dn_rom.v was successful.
 # Compile of pll_clk.v was successful.
 # Compile of sn_ram.v was successful.
 # Compile of sz_ram.v was successful.
@@ -83,10 +155,11 @@
 # Compile of altera_mf.v was successful.
 # Compile of en_rom.v was successful.
 # Compile of xn_rom.v was successful.
+# Compile of dn_rom.v was successful.
 # 34 compiles, 0 failed with no errors.
-vsim -gui work.SANRC_tb -novopt
-# vsim -gui work.SANRC_tb -novopt 
-# Start time: 17:08:46 on Dec 10,2021
+vsim -gui -novopt work.SANRC_tb
+# vsim -gui -novopt work.SANRC_tb 
+# Start time: 21:37:11 on Jan 26,2023
 # ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
 # Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC_tb
 # Loading work.SANRC_tb
@@ -156,11 +229,726 @@ vsim -gui work.SANRC_tb -novopt
 # Loading work.ALTERA_DEVICE_FAMILIES
 # Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ALTERA_MF_MEMORY_INITIALIZATION
 # Loading work.ALTERA_MF_MEMORY_INITIALIZATION
-# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'Key0'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v(47).
+# ** Warning: (vsim-3017) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Too few port connections. Expected 29, found 20.
 #    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
-# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/rtl/ANC/OFZ/OFZ.v(125): [PCDPC] - Port size (11) does not match connection size (13) for port 'address'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/par/ipcore/vn_rom.v(40).
-#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC/u_ANC/u_OFZ/u_vn_rom File: C:/Users/Administrator/Desktop/SANRC/par/ipcore/vn_rom.v
-do C:/Users/Administrator/Desktop/SANRC/sim/ANC.do
+# ** Error: (vsim-3063) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): Port 'mic_bclk_l' not found in the connected module (10th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Error: (vsim-3063) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): Port 'mic_lrc_l' not found in the connected module (11th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Error: (vsim-3063) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): Port 'mic_bclk_r' not found in the connected module (14th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Error: (vsim-3063) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): Port 'mic_lrc_r' not found in the connected module (15th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'Key0'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v(62).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_l'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_l'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_r'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_r'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_2'.
+# Error loading design
+# End time: 21:37:13 on Jan 26,2023, Elapsed time: 0:00:02
+# Errors: 4, Warnings: 16
+# Load canceled
+# Compile of SANRC_tb.v was successful.
+# Compile of DRST.v was successful.
+# Compile of IISC.v was successful.
+# Compile of macro.v was successful.
+# Compile of OFC_MIC_TEST.v was successful.
+# Compile of SANRC.v was successful.
+# Compile of ANC.v was successful.
+# Compile of ANC_INP.v was successful.
+# Compile of ANC_LMS.v was successful.
+# Compile of ANCC.v was successful.
+# Compile of INP.v was successful.
+# Compile of LMS.v was successful.
+# Compile of OFZ.v was successful.
+# Compile of OFZC.v was successful.
+# Compile of AR.v was successful.
+# Compile of ARC.v was successful.
+# Compile of AS.v was successful.
+# Compile of ASC.v was successful.
+# Compile of i2c_dri.v was successful.
+# Compile of i2c_reg_cfg.v was successful with warnings.
+# Compile of wm8978_config.v was successful.
+# Compile of WMC.v was successful.
+# Compile of MIIS.v was successful.
+# Compile of pll_clk.v was successful.
+# Compile of sn_ram.v was successful.
+# Compile of sz_ram.v was successful.
+# Compile of vn_rom.v was successful.
+# Compile of wz_ram.v was successful.
+# Compile of xn_ram.v was successful.
+# Compile of 220model.v was successful.
+# Compile of altera_mf.v was successful.
+# Compile of en_rom.v was successful.
+# Compile of xn_rom.v was successful.
+# Compile of dn_rom.v was successful.
+# 34 compiles, 0 failed with no errors.
+vsim -gui -novopt work.SANRC_tb
+# vsim -gui -novopt work.SANRC_tb 
+# Start time: 21:39:51 on Jan 26,2023
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC_tb
+# Loading work.SANRC_tb
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC
+# Loading work.SANRC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.WMC
+# Loading work.WMC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.wm8978_config
+# Loading work.wm8978_config
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.i2c_reg_cfg
+# Loading work.i2c_reg_cfg
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.i2c_dri
+# Loading work.i2c_dri
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ARC
+# Loading work.ARC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.AR
+# Loading work.AR
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ASC
+# Loading work.ASC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.AS
+# Loading work.AS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC
+# Loading work.ANC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANCC
+# Loading work.ANCC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZ
+# Loading work.OFZ
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZC
+# Loading work.OFZC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.LMS
+# Loading work.LMS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.INP
+# Loading work.INP
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.vn_rom
+# Loading work.vn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.altsyncram
+# Loading work.altsyncram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC_INP
+# Loading work.ANC_INP
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC_LMS
+# Loading work.ANC_LMS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.wz_ram
+# Loading work.wz_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.sz_ram
+# Loading work.sz_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.sn_ram
+# Loading work.sn_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.xn_ram
+# Loading work.xn_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.MIIS
+# Loading work.MIIS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.IISC
+# Loading work.IISC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZ_MIC_TEST
+# Loading work.OFZ_MIC_TEST
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.dn_rom
+# Loading work.dn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.xn_rom
+# Loading work.xn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.en_rom
+# Loading work.en_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.DRST
+# Loading work.DRST
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.altsyncram_body
+# Loading work.altsyncram_body
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Too few port connections. Expected 29, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'Key0'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v(62).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_2'.
+do C:/Users/Administrator/Desktop/SANRC/sim/SANRC.do
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Administrator  Hostname: ITX-5700G  ProcessID: 12712
+#           Attempting to use alternate WLF file "./wlftw3yg4k".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftw3yg4k
 run
-# End time: 17:09:20 on Dec 10,2021, Elapsed time: 0:00:34
-# Errors: 0, Warnings: 3
+add wave -position insertpoint sim:/SANRC_tb/u_SANRC/u_OFZ_MIC_TEST/*
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# ** Warning: (vsim-3017) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Too few port connections. Expected 29, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'Key0'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v(62).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_2'.
+run
+# Compile of SANRC_tb.v was successful.
+# Compile of DRST.v was successful.
+# Compile of IISC.v was successful.
+# Compile of macro.v was successful.
+# Compile of OFC_MIC_TEST.v was successful.
+# Compile of SANRC.v was successful.
+# Compile of ANC.v was successful.
+# Compile of ANC_INP.v was successful.
+# Compile of ANC_LMS.v was successful.
+# Compile of ANCC.v was successful.
+# Compile of INP.v was successful.
+# Compile of LMS.v was successful.
+# Compile of OFZ.v was successful.
+# Compile of OFZC.v was successful.
+# Compile of AR.v was successful.
+# Compile of ARC.v was successful.
+# Compile of AS.v was successful.
+# Compile of ASC.v was successful.
+# Compile of i2c_dri.v was successful.
+# Compile of i2c_reg_cfg.v was successful with warnings.
+# Compile of wm8978_config.v was successful.
+# Compile of WMC.v was successful.
+# Compile of MIIS.v was successful.
+# Compile of pll_clk.v was successful.
+# Compile of sn_ram.v was successful.
+# Compile of sz_ram.v was successful.
+# Compile of vn_rom.v was successful.
+# Compile of wz_ram.v was successful.
+# Compile of xn_ram.v was successful.
+# Compile of 220model.v was successful.
+# Compile of altera_mf.v was successful.
+# Compile of en_rom.v was successful.
+# Compile of xn_rom.v was successful.
+# Compile of dn_rom.v was successful.
+# 34 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC_tb
+# Loading work.SANRC_tb
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC
+# Loading work.SANRC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.WMC
+# Loading work.WMC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.wm8978_config
+# Loading work.wm8978_config
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.i2c_reg_cfg
+# Loading work.i2c_reg_cfg
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.i2c_dri
+# Loading work.i2c_dri
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ARC
+# Loading work.ARC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.AR
+# Loading work.AR
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ASC
+# Loading work.ASC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.AS
+# Loading work.AS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC
+# Loading work.ANC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANCC
+# Loading work.ANCC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZ
+# Loading work.OFZ
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZC
+# Loading work.OFZC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.LMS
+# Loading work.LMS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.INP
+# Loading work.INP
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.vn_rom
+# Loading work.vn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.altsyncram
+# Loading work.altsyncram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC_INP
+# Loading work.ANC_INP
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC_LMS
+# Loading work.ANC_LMS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.wz_ram
+# Loading work.wz_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.sz_ram
+# Loading work.sz_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.sn_ram
+# Loading work.sn_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.xn_ram
+# Loading work.xn_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.MIIS
+# Loading work.MIIS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.IISC
+# Loading work.IISC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZ_MIC_TEST
+# Loading work.OFZ_MIC_TEST
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.dn_rom
+# Loading work.dn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.xn_rom
+# Loading work.xn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.en_rom
+# Loading work.en_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.DRST
+# Loading work.DRST
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.altsyncram_body
+# Loading work.altsyncram_body
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Too few port connections. Expected 29, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'Key0'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v(62).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_2'.
+run
+# Compile of SANRC_tb.v was successful.
+# Compile of DRST.v was successful.
+# Compile of IISC.v was successful.
+# Compile of macro.v was successful.
+# Compile of OFC_MIC_TEST.v was successful.
+# Compile of SANRC.v was successful.
+# Compile of ANC.v was successful.
+# Compile of ANC_INP.v was successful.
+# Compile of ANC_LMS.v was successful.
+# Compile of ANCC.v was successful.
+# Compile of INP.v was successful.
+# Compile of LMS.v was successful.
+# Compile of OFZ.v was successful.
+# Compile of OFZC.v was successful.
+# Compile of AR.v was successful.
+# Compile of ARC.v was successful.
+# Compile of AS.v was successful.
+# Compile of ASC.v was successful.
+# Compile of i2c_dri.v was successful.
+# Compile of i2c_reg_cfg.v was successful with warnings.
+# Compile of wm8978_config.v was successful.
+# Compile of WMC.v was successful.
+# Compile of MIIS.v was successful.
+# Compile of pll_clk.v was successful.
+# Compile of sn_ram.v was successful.
+# Compile of sz_ram.v was successful.
+# Compile of vn_rom.v was successful.
+# Compile of wz_ram.v was successful.
+# Compile of xn_ram.v was successful.
+# Compile of 220model.v was successful.
+# Compile of altera_mf.v was successful.
+# Compile of en_rom.v was successful.
+# Compile of xn_rom.v was successful.
+# Compile of dn_rom.v was successful.
+# 34 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC_tb
+# Loading work.SANRC_tb
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC
+# Loading work.SANRC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.WMC
+# Loading work.WMC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.wm8978_config
+# Loading work.wm8978_config
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.i2c_reg_cfg
+# Loading work.i2c_reg_cfg
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.i2c_dri
+# Loading work.i2c_dri
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ARC
+# Loading work.ARC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.AR
+# Loading work.AR
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ASC
+# Loading work.ASC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.AS
+# Loading work.AS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC
+# Loading work.ANC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANCC
+# Loading work.ANCC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZ
+# Loading work.OFZ
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZC
+# Loading work.OFZC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.LMS
+# Loading work.LMS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.INP
+# Loading work.INP
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.vn_rom
+# Loading work.vn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.altsyncram
+# Loading work.altsyncram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC_INP
+# Loading work.ANC_INP
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC_LMS
+# Loading work.ANC_LMS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.wz_ram
+# Loading work.wz_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.sz_ram
+# Loading work.sz_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.sn_ram
+# Loading work.sn_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.xn_ram
+# Loading work.xn_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.MIIS
+# Loading work.MIIS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.IISC
+# Loading work.IISC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZ_MIC_TEST
+# Loading work.OFZ_MIC_TEST
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.dn_rom
+# Loading work.dn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.xn_rom
+# Loading work.xn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.en_rom
+# Loading work.en_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.DRST
+# Loading work.DRST
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.altsyncram_body
+# Loading work.altsyncram_body
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Too few port connections. Expected 29, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'Key0'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v(62).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_2'.
+run
+add wave -position insertpoint  \
+sim:/SANRC_tb/u_SANRC/u_ANC/yn
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# ** Warning: (vsim-3017) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Too few port connections. Expected 29, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'Key0'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v(62).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_2'.
+run
+add wave -position insertpoint sim:/SANRC_tb/u_SANRC/u_ANC/*
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# ** Warning: (vsim-3017) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Too few port connections. Expected 29, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'Key0'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v(62).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_2'.
+run
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# ** Warning: (vsim-3017) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Too few port connections. Expected 29, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'Key0'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v(62).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_2'.
+add wave -position insertpoint sim:/SANRC_tb/u_SANRC/u_ANC/u_ANCC/*
+run
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# ** Warning: (vsim-3017) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Too few port connections. Expected 29, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'Key0'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v(62).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_2'.
+# Compile of SANRC_tb.v was successful.
+# Compile of DRST.v was successful.
+# Compile of IISC.v was successful.
+# Compile of macro.v was successful.
+# Compile of OFC_MIC_TEST.v was successful.
+# Compile of SANRC.v was successful.
+# Compile of ANC.v was successful.
+# Compile of ANC_INP.v was successful.
+# Compile of ANC_LMS.v was successful.
+# Compile of ANCC.v was successful.
+# Compile of INP.v was successful.
+# Compile of LMS.v was successful.
+# Compile of OFZ.v was successful.
+# Compile of OFZC.v was successful.
+# Compile of AR.v was successful.
+# Compile of ARC.v was successful.
+# Compile of AS.v was successful.
+# Compile of ASC.v was successful.
+# Compile of i2c_dri.v was successful.
+# Compile of i2c_reg_cfg.v was successful with warnings.
+# Compile of wm8978_config.v was successful.
+# Compile of WMC.v was successful.
+# Compile of MIIS.v was successful.
+# Compile of pll_clk.v was successful.
+# Compile of sn_ram.v was successful.
+# Compile of sz_ram.v was successful.
+# Compile of vn_rom.v was successful.
+# Compile of wz_ram.v was successful.
+# Compile of xn_ram.v was successful.
+# Compile of 220model.v was successful.
+# Compile of altera_mf.v was successful.
+# Compile of en_rom.v was successful.
+# Compile of xn_rom.v was successful.
+# Compile of dn_rom.v was successful.
+# 34 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC_tb
+# Loading work.SANRC_tb
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC
+# Loading work.SANRC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.WMC
+# Loading work.WMC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.wm8978_config
+# Loading work.wm8978_config
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.i2c_reg_cfg
+# Loading work.i2c_reg_cfg
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.i2c_dri
+# Loading work.i2c_dri
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ARC
+# Loading work.ARC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.AR
+# Loading work.AR
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ASC
+# Loading work.ASC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.AS
+# Loading work.AS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC
+# Loading work.ANC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANCC
+# Loading work.ANCC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZ
+# Loading work.OFZ
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZC
+# Loading work.OFZC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.LMS
+# Loading work.LMS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.INP
+# Loading work.INP
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.vn_rom
+# Loading work.vn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.altsyncram
+# Loading work.altsyncram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC_INP
+# Loading work.ANC_INP
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC_LMS
+# Loading work.ANC_LMS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.wz_ram
+# Loading work.wz_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.sz_ram
+# Loading work.sz_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.sn_ram
+# Loading work.sn_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.xn_ram
+# Loading work.xn_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.MIIS
+# Loading work.MIIS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.IISC
+# Loading work.IISC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZ_MIC_TEST
+# Loading work.OFZ_MIC_TEST
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.dn_rom
+# Loading work.dn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.xn_rom
+# Loading work.xn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.en_rom
+# Loading work.en_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.DRST
+# Loading work.DRST
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.altsyncram_body
+# Loading work.altsyncram_body
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Too few port connections. Expected 29, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'Key0'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v(62).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_2'.
+run
+# Unable to retrieve min/max values for "sim:/SANRC_tb/u_SANRC/u_ANC/u_ANCC/Yn001":
+# 
+# can't unset "d(busyOldCursor)": no such element in array
+add wave -position insertpoint  \
+sim:/SANRC_tb/u_SANRC/u_ANC/Dn
+# Compile of SANRC_tb.v was successful.
+# Compile of DRST.v was successful.
+# Compile of IISC.v was successful.
+# Compile of macro.v was successful.
+# Compile of OFC_MIC_TEST.v was successful.
+# Compile of SANRC.v was successful.
+# Compile of ANC.v was successful.
+# Compile of ANC_INP.v was successful.
+# Compile of ANC_LMS.v was successful.
+# Compile of ANCC.v was successful.
+# Compile of INP.v was successful.
+# Compile of LMS.v was successful.
+# Compile of OFZ.v was successful.
+# Compile of OFZC.v was successful.
+# Compile of AR.v was successful.
+# Compile of ARC.v was successful.
+# Compile of AS.v was successful.
+# Compile of ASC.v was successful.
+# Compile of i2c_dri.v was successful.
+# Compile of i2c_reg_cfg.v was successful with warnings.
+# Compile of wm8978_config.v was successful.
+# Compile of WMC.v was successful.
+# Compile of MIIS.v was successful.
+# Compile of pll_clk.v was successful.
+# Compile of sn_ram.v was successful.
+# Compile of sz_ram.v was successful.
+# Compile of vn_rom.v was successful.
+# Compile of wz_ram.v was successful.
+# Compile of xn_ram.v was successful.
+# Compile of 220model.v was successful.
+# Compile of altera_mf.v was successful.
+# Compile of en_rom.v was successful.
+# Compile of xn_rom.v was successful.
+# Compile of dn_rom.v was successful.
+# 34 compiles, 0 failed with no errors.
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC_tb
+# Loading work.SANRC_tb
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.SANRC
+# Loading work.SANRC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.WMC
+# Loading work.WMC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.wm8978_config
+# Loading work.wm8978_config
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.i2c_reg_cfg
+# Loading work.i2c_reg_cfg
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.i2c_dri
+# Loading work.i2c_dri
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ARC
+# Loading work.ARC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.AR
+# Loading work.AR
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ASC
+# Loading work.ASC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.AS
+# Loading work.AS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC
+# Loading work.ANC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANCC
+# Loading work.ANCC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZ
+# Loading work.OFZ
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZC
+# Loading work.OFZC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.LMS
+# Loading work.LMS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.INP
+# Loading work.INP
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.vn_rom
+# Loading work.vn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.altsyncram
+# Loading work.altsyncram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC_INP
+# Loading work.ANC_INP
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ANC_LMS
+# Loading work.ANC_LMS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.wz_ram
+# Loading work.wz_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.sz_ram
+# Loading work.sz_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.sn_ram
+# Loading work.sn_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.xn_ram
+# Loading work.xn_ram
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.MIIS
+# Loading work.MIIS
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.IISC
+# Loading work.IISC
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.OFZ_MIC_TEST
+# Loading work.OFZ_MIC_TEST
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.dn_rom
+# Loading work.dn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.xn_rom
+# Loading work.xn_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.en_rom
+# Loading work.en_rom
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.DRST
+# Loading work.DRST
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.altsyncram_body
+# Loading work.altsyncram_body
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ALTERA_DEVICE_FAMILIES
+# Loading work.ALTERA_DEVICE_FAMILIES
+# Refreshing C:/Users/Administrator/Desktop/SANRC/sim/work.ALTERA_MF_MEMORY_INITIALIZATION
+# Loading work.ALTERA_MF_MEMORY_INITIALIZATION
+# ** Warning: (vsim-3017) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Too few port connections. Expected 29, found 20.
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3015) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [PCDPC] - Port size (1) does not match connection size (32) for port 'Key0'. The port definition is at: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v(62).
+#    Time: 0 ps  Iteration: 0  Instance: /SANRC_tb/u_SANRC File: C:/Users/Administrator/Desktop/SANRC/rtl/SANRC.v
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_ref'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_1'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sd_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_sck_2'.
+# ** Warning: (vsim-3722) C:/Users/Administrator/Desktop/SANRC/sim/SANRC_tb.v(20): [TFMPC] - Missing connection for port 'mic_ws_2'.
+run
+# End time: 12:47:58 on Jan 27,2023, Elapsed time: 15:08:07
+# Errors: 1, Warnings: 0

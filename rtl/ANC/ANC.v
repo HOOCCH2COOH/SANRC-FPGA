@@ -16,10 +16,12 @@ module ANC(
 	 
 	 input                       audio_rx_down,  //xn, en finished flag
 	 
-	 input      signed [15:0]    audio_left_i,   //xn
-	 input      signed [15:0]    audio_right_i,  //en
-	 output     signed [15:0]    audio_left_o,   //fn
-	 output     signed [15:0]    audio_right_o , //yn        
+	 input      signed [15:0]    audio_ref_i,    //xn,xn
+	 input      signed [15:0]    audio_en1_i,    //en1,en
+	 input      signed [15:0]    audio_en2_i,    //en2
+	 
+	 output     signed [15:0]    audio_yn1_o,    //fn
+	 output     signed [15:0]    audio_yn2_o ,   //yn        
 	 output            [11:0]    cyc_cnt,	
 	 output                      OFZ_ok
     );
@@ -73,11 +75,14 @@ wire          [6:0]   lms_frame;
 
 //
 wire  signed  [15:0]  vn;   
-wire  signed  [INP_OUT_WIDTH-1:0]  yn;            
+wire  signed  [INP_OUT_WIDTH-1:0]  yn;        
+
+wire          [15:0]   wire_un;  
+wire                   wire_start_pedge;
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/	
 assign sz_addr       = OFZ_ok    ? inp_frame : sz_OFZ_addr;
-assign audio_right_o = OFZ_ok    ? yn[INP_OUT_WIDTH-1-:16] : vn ;
-
+//拟合阶段输出白噪声，非拟合阶段输出降噪声波
+assign audio_yn2_o = OFZ_ok    ? (yn[INP_OUT_WIDTH-1-:16])<<<2 : vn ;
 assign inp_in        = inp_state ?        sz : wz;
 
 ANCC 
@@ -104,15 +109,15 @@ u_ANCC(
 	);
 
 OFZ u_OFZ(
-	.cyc_cnt       (cyc_cnt),
+	.cyc_cnt       (cyc_cnt),        /*output*/
 
-	.audio_left_o  (audio_left_o),
+	.audio_test_o  (audio_yn1_o),
 	
 	.clk           (clk && !OFZ_ok),
 	.rst_n         (rst_n),
 	.audio_rx_down (audio_rx_down),
 	
-	.en_temp       (audio_right_i),
+	.en_temp       (audio_en1_i),
 	.vn            (vn),
 	
 	.OFZ_ok        (OFZ_ok),
@@ -147,14 +152,31 @@ ANC_LMS
 	
 	.lms_frame     (lms_frame),
 	.lms_v         (sn),            //bits=S+53
-	.lms_e         (audio_right_i), //bits=S+15
+	.lms_e         (audio_en1_i),   //bits=S+15
 	
 	
 	.w_ok          (wz_wren),
 	.lms_w         (wz),            //bits=S+31
-	.lms_w_next    (wz_next)        //bits=S+31
+	.lms_w_next    (wz_next),       //bits=S+31
+	.un            (wire_un)
 	);	
 
+	
+ANC_ALIT
+#(
+	.ALIT_A        (20),
+	.ALIT_B        (20),
+	.ALIT_H        (20),
+	.ALIT_M        (20)
+)u_ANC_ALIT(
+	.clk           (clk),
+	.rst_n         (rst_n),
+	
+	.en            (audio_en1_i),
+	.un            (wire_un),
+	.start_pedge   (wire_start_pedge)
+	);	
+	
 	
 //28bits*128words (28bits*126words)
 wz_ram u_wz_ram(
@@ -192,7 +214,8 @@ xn_ram u_xn_ram(
 	.address       (xn_addr),        
 	
 	.wren          (audio_rx_down),
-	.data          (audio_left_i), 
+	.data          (audio_ref_i), 
 	.q             (xn)            
 	);
+	
 endmodule 

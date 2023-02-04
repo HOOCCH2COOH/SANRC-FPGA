@@ -1,0 +1,68 @@
+# Copyright (C) 2018  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+
+# Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Standard Edition
+# File: C:\Users\Administrator\Desktop\SANRC\pinmap\EP4CE10F17.csv
+# Generated on: Thu Feb 02 16:22:47 2023
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Strict Preservation
+Key0,Input,PIN_E16,6,B6_N0,2.5 V,,,,,
+Triger_Logic,Output,PIN_L2,2,B2_N0,2.5 V,,,,,
+aud_bclk,Output,PIN_D5,8,B8_N0,2.5 V,,,,,
+aud_dacdat,Output,PIN_C6,8,B8_N0,2.5 V,,,,,
+aud_lrc,Output,PIN_E6,8,B8_N0,2.5 V,,,,,
+aud_mclk,Output,PIN_E7,8,B8_N0,2.5 V,,,,,
+aud_scl,Output,PIN_D8,8,B8_N0,2.5 V,,,,,
+aud_sda,Bidir,PIN_C8,8,B8_N0,2.5 V,,,,,
+can_ale,Input,,,,,,,,,
+can_clk,Input,,,,,,,,,
+can_cs,Input,,,,,,,,,
+can_data[7],Bidir,,,,,,,,,
+can_data[6],Bidir,,,,,,,,,
+can_data[5],Bidir,,,,,,,,,
+can_data[4],Bidir,,,,,,,,,
+can_data[3],Bidir,,,,,,,,,
+can_data[2],Bidir,,,,,,,,,
+can_data[1],Bidir,,,,,,,,,
+can_data[0],Bidir,,,,,,,,,
+can_en,Output,,,,,,,,,
+can_int,Input,,,,,,,,,
+can_rd,Input,,,,,,,,,
+can_rst,Output,,,,,,,,,
+can_wr,Input,,,,,,,,,
+mic_sck_bn1,Output,,,,,,,,,
+mic_sck_bn2,Output,,,,,,,,,
+mic_sck_en1,Output,PIN_B13,7,B7_N0,,,,,,
+mic_sck_en2,Output,,,,,,,,,
+mic_sck_ref,Output,PIN_A13,7,B7_N0,,,,,,
+mic_sd_bn1,Input,,,,,,,,,
+mic_sd_bn2,Input,,,,,,,,,
+mic_sd_en1,Input,PIN_B11,7,B7_N0,,,,,,
+mic_sd_en2,Input,,,,,,,,,
+mic_sd_l_Logic,Output,PIN_A9,7,B7_N0,2.5 V,,,,,
+mic_sd_r_Logic,Output,PIN_B9,7,B7_N0,2.5 V,,,,,
+mic_sd_ref,Input,PIN_A11,7,B7_N0,,,,,,
+mic_ws_bn1,Output,,,,,,,,,
+mic_ws_bn2,Output,,,,,,,,,
+mic_ws_en1,Output,PIN_B12,7,B7_N0,,,,,,
+mic_ws_en2,Output,,,,,,,,,
+mic_ws_ref,Output,PIN_A12,7,B7_N0,,,,,,
+spi_cs,Output,,,,,,,,,
+spi_miso,Input,,,,,,,,,
+spi_mosi,Output,,,,,,,,,
+spi_sck,Output,,,,,,,,,
+sys_clk,Input,PIN_E1,1,B1_N0,2.5 V,,,,,
+sys_rst_n,Input,PIN_M1,2,B2_N0,2.5 V,,,,,

@@ -1,0 +1,17 @@
+	component EPCS is
+		port (
+			addr          : in  std_logic_vector(23 downto 0) := (others => 'X'); -- addr
+			busy          : out std_logic;                                        -- busy
+			clkin         : in  std_logic                     := 'X';             -- clk
+			data_valid    : out std_logic;                                        -- data_valid
+			datain        : in  std_logic_vector(7 downto 0)  := (others => 'X'); -- datain
+			dataout       : out std_logic_vector(7 downto 0);                     -- dataout
+			illegal_write : out std_logic;                                        -- illegal_write
+			rden          : in  std_logic                     := 'X';             -- rden
+			read          : in  std_logic                     := 'X';             -- read
+			reset         : in  std_logic                     := 'X';             -- reset
+			wren          : in  std_logic                     := 'X';             -- wren
+			write         : in  std_logic                     := 'X'              -- write
+		);
+	end component EPCS;
+

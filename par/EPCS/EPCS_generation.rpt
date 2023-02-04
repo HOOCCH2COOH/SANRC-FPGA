@@ -1,0 +1,29 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\Administrator\Desktop\SANRC\par\EPCS.qsys --block-symbol-file --output-directory=C:\Users\Administrator\Desktop\SANRC\par\EPCS --family="Cyclone IV E" --part=EP4CE10F17C8
+Progress: Loading par/EPCS.qsys
+Progress: Reading input file
+Progress: Adding asmi_parallel_0 [altera_asmi_parallel 18.1]
+Progress: Parameterizing module asmi_parallel_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\Administrator\Desktop\SANRC\par\EPCS.qsys --synthesis=VERILOG --output-directory=C:\Users\Administrator\Desktop\SANRC\par\EPCS\synthesis --family="Cyclone IV E" --part=EP4CE10F17C8
+Progress: Loading par/EPCS.qsys
+Progress: Reading input file
+Progress: Adding asmi_parallel_0 [altera_asmi_parallel 18.1]
+Progress: Parameterizing module asmi_parallel_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: EPCS: Generating EPCS "EPCS" for QUARTUS_SYNTH
+Info: asmi_parallel_0: generating top-level entity EPCS_asmi_parallel_0
+Info: asmi_parallel_0: "EPCS" instantiated altera_asmi_parallel "asmi_parallel_0"
+Info: EPCS: Done "EPCS" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

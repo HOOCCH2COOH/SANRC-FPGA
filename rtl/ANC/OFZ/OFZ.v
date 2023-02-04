@@ -22,7 +22,7 @@ module OFZ
 	 
 	 /*-*-*-*-*-*-*-*Test-*-*-*-*-*-*-*-*-*-*/
 	 output              [11:0] cyc_cnt,
-	 output              [15:0] audio_left_o,
+	 output              [15:0] audio_test_o,
 	 /*-------------------------------------*/
 	 
 	 output                     OFZ_ok,     //OFZ模块的自锁信号
@@ -57,7 +57,7 @@ wire  signed   [19:0] sz_next_temp;
 
 //以下代码是为了保证麦克风采集的数据和拟合的结果是在扬声器稳定输出时得到的
 assign sz_wren      = (cyc_cnt < ('d4095-'d255)) ? w_ok : 'd0;
-assign audio_left_o = (cyc_cnt < ('d4095-'d255)) ? fn[34:19] : 'd0;
+assign audio_test_o = (cyc_cnt < ('d4095-'d255)) ? fn[34:19] : 'd0;
 assign en           = (cyc_cnt > 'd255)  ? en_temp : 'd0;  
 assign sz_next      = (cyc_cnt > 'd255)  ? sz_next_temp : 'd0;  
 

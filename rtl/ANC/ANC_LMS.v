@@ -28,9 +28,10 @@ module ANC_LMS
 	 //wz_ram_contral
 	 input      signed [WZ_WIDTH-1:0] lms_w,
 	 output reg signed [WZ_WIDTH-1:0] lms_w_next, 
-	 output                   w_ok
+	 output                   w_ok,
+	 input             [15:0]         un
     );
-parameter FACTOR = 4'd5;
+parameter FACTOR = 4'd4;
 wire                lms_valid;
 assign  lms_valid = lms_frame && lms_frame <= 'd126 ? 1'b1:1'b0;
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*

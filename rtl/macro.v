@@ -1,4 +1,4 @@
-`define SIM    //仿真时取消注释
-`define HARD   //仿真时取消注释
+//`define SIM    //实际运行时注释掉
+`define HARD   //是否采取硬件模拟输入信号
 
-`define OFZ
+`define OFZ  //是否使用次级通道拟合
