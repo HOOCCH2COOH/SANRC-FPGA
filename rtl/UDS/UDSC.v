@@ -43,21 +43,21 @@ wire [7:0]  dataout;
 wire        rden;
 wire        wren;
 wire        illegal_write;
-EPCS u_EPCS(
-	.clkin         (clk),
-	.reset         (rst_n),        
-	
-	.read          (spi_sck),
-	.write         (spi_miso), 
-	.busy          (spi_mosi), 
-	.addr          (addr),
-	.datain        (datain),
-	.dataout       (dataout),
-	.rden          (rden),
-	.wren          (wren),
-	.illegal_write (illegal_write)
-	
-	);
+//EPCS u_EPCS(
+//	.clkin         (clk),
+//	.reset         (rst_n),        
+//	
+//	.read          (spi_sck),
+//	.write         (spi_miso), 
+//	.busy          (spi_mosi), 
+//	.addr          (addr),
+//	.datain        (datain),
+//	.dataout       (dataout),
+//	.rden          (rden),
+//	.wren          (wren),
+//	.illegal_write (illegal_write)
+//	
+//	);
 	
 
 endmodule 

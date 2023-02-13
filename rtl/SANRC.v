@@ -51,7 +51,8 @@ module SANRC(
 	 output          mic_sd_l_Logic,
 	 output          mic_sd_r_Logic,
 	 output          Triger_Logic,
-
+	 output          dacdat_Logic,
+	 
 	 inout   [7:0]   can_data,
 	 
 	 input           can_clk,
@@ -104,6 +105,7 @@ wire signed [15:0] mic_data_bn2;
 wire signed [15:0] audio_yn1_o;
 wire signed [15:0] audio_yn2_o;
 wire               audio_rx_down;  
+wire signed [15:0] audio_yn1_sel_o;
 wire signed [15:0] audio_yn2_sel_o;
 //MULTI WIRE
 
@@ -121,6 +123,8 @@ assign mic_ws_bn2  = aud_lrc;
 
 assign mute_en1    = 0;
 assign mute_en1    = 0;
+
+assign dacdat_Logic = aud_dacdat;
 
 /**/`ifdef HARD /**/
 wire               mic_l;
@@ -149,7 +153,7 @@ WMC u_WMC(
     
 	 .audio_left_i       (),                   // 左声道输入
 	 .audio_right_i      (),                   // 右声道输入
-	 .audio_left_o       (audio_yn1_o),        /*input*/   
+	 .audio_left_o       (audio_yn1_sel_o),    /*input*/   
 	 .audio_right_o      (audio_yn2_sel_o),    /*input*/   
 	
 	 .audio_rx_down      (),                   // 接收完成

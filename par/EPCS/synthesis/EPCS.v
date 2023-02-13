@@ -18,19 +18,19 @@ module EPCS (
 		input  wire        write          //         write.write
 	);
 
-	EPCS_asmi_parallel_0 asmi_parallel_0 (
-		.clkin         (clkin),         //         clkin.clk
-		.read          (read),          //          read.read
-		.rden          (rden),          //          rden.rden
-		.addr          (addr),          //          addr.addr
-		.write         (write),         //         write.write
-		.datain        (datain),        //        datain.datain
-		.wren          (wren),          //          wren.wren
-		.reset         (reset),         //         reset.reset
-		.dataout       (dataout),       //       dataout.dataout
-		.busy          (busy),          //          busy.busy
-		.data_valid    (data_valid),    //    data_valid.data_valid
-		.illegal_write (illegal_write)  // illegal_write.illegal_write
-	);
+//	EPCS_asmi_parallel_0 asmi_parallel_0 (
+//		.clkin         (clkin),         //         clkin.clk
+//		.read          (read),          //          read.read
+//		.rden          (rden),          //          rden.rden
+//		.addr          (addr),          //          addr.addr
+//		.write         (write),         //         write.write
+//		.datain        (datain),        //        datain.datain
+//		.wren          (wren),          //          wren.wren
+//		.reset         (reset),         //         reset.reset
+//		.dataout       (dataout),       //       dataout.dataout
+//		.busy          (busy),          //          busy.busy
+//		.data_valid    (data_valid),    //    data_valid.data_valid
+//		.illegal_write (illegal_write)  // illegal_write.illegal_write
+//	);
 
 endmodule

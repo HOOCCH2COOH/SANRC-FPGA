@@ -82,7 +82,7 @@ wire                   wire_start_pedge;
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/	
 assign sz_addr       = OFZ_ok    ? inp_frame : sz_OFZ_addr;
 //拟合阶段输出白噪声，非拟合阶段输出降噪声波
-assign audio_yn2_o = OFZ_ok    ? (yn[INP_OUT_WIDTH-1-:16])<<<2 : vn ;
+assign audio_yn2_o = OFZ_ok    ? (yn[INP_OUT_WIDTH-1-:16]) : vn ;
 assign inp_in        = inp_state ?        sz : wz;
 
 ANCC 
@@ -118,7 +118,7 @@ OFZ u_OFZ(
 	.audio_rx_down (audio_rx_down),
 	
 	.en_temp       (audio_en1_i),
-	.vn            (vn),
+	.vn_speaker            (vn),
 	
 	.OFZ_ok        (OFZ_ok),
 	//sz_ram

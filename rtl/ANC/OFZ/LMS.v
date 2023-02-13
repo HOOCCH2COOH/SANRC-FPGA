@@ -11,7 +11,7 @@
 `timescale 10ns/10ns
 module LMS
 #(
-	parameter  FU = 4'd5
+	parameter  FU = 4'd6
 )(
     input                    clk, 
     input                    rst_n,

@@ -31,7 +31,7 @@ module ANC_LMS
 	 output                   w_ok,
 	 input             [15:0]         un
     );
-parameter FACTOR = 4'd4;
+parameter FACTOR = 4'd5;
 wire                lms_valid;
 assign  lms_valid = lms_frame && lms_frame <= 'd126 ? 1'b1:1'b0;
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*

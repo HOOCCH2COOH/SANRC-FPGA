@@ -18,7 +18,7 @@ module OFZ
 	 input                      audio_rx_down,
 	 
 	 input       signed  [15:0] en_temp,    //data from right channel accepted in audio module
-	 output      signed  [15:0] vn,         //send to speaker
+	 output reg  signed  [15:0] vn_speaker,         //send to speaker
 	 
 	 /*-*-*-*-*-*-*-*Test-*-*-*-*-*-*-*-*-*-*/
 	 output              [11:0] cyc_cnt,
@@ -43,7 +43,7 @@ module OFZ
  *Author:
  *                                                                @rainbowsmile-
  ------------------------------------------------------------------------------*/
-localparam FU = 4'd5;
+localparam FU = 4'd4;
 wire           [11:0] vn_addr;
 
 wire           [6:0]  inp_frame;
@@ -52,7 +52,7 @@ wire  signed   [15:0] en;
 wire  signed   [35:0] yn;
 wire  signed   [35:0] fn;
 wire                  w_ok;
-
+wire  signed   [15:0] vn;
 wire  signed   [19:0] sz_next_temp;
 
 //以下代码是为了保证麦克风采集的数据和拟合的结果是在扬声器稳定输出时得到的
@@ -60,8 +60,11 @@ assign sz_wren      = (cyc_cnt < ('d4095-'d255)) ? w_ok : 'd0;
 assign audio_test_o = (cyc_cnt < ('d4095-'d255)) ? fn[34:19] : 'd0;
 assign en           = (cyc_cnt > 'd255)  ? en_temp : 'd0;  
 assign sz_next      = (cyc_cnt > 'd255)  ? sz_next_temp : 'd0;  
-
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/	
+always @(posedge clk or negedge rst_n) begin
+	if(!rst_n) vn_speaker <= 'd0;
+	else if(audio_rx_down =='d1)  vn_speaker <= vn;
+end  
 
 OFZC u_OFZC(
 	.clk           (clk),
