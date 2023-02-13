@@ -138,9 +138,13 @@ assign mic_sd_r_Logic = mic_sd_en1;
 
 
 assign Triger_Logic = cyc_cnt=='d1;
+/**/`ifdef Single /**/
 assign audio_yn1_sel_o = !OFZ_ok ? audio_yn1_o:'d0;  
 assign audio_yn2_sel_o = Key0 ? audio_yn2_o:'d0;    //如果key为1，输出ANC模块信号；否则静音
-
+/**/`else       /**/ 
+assign audio_yn1_sel_o = Key0 ? audio_yn1_o:'d0;  
+assign audio_yn2_sel_o = Key0 ? audio_yn2_o:'d0;
+/**/`endif      /**/  
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 WMC u_WMC(
     .clk                (sys_clk    ),        // 时钟信号
@@ -162,7 +166,7 @@ WMC u_WMC(
     .aud_sda            (aud_sda    )         // IIC通信
 );
 
-ANC u_ANC(
+ANC u1_ANC(
 	 .cyc_cnt            (cyc_cnt),
 	 .OFZ_ok             (OFZ_ok),           /*output*/ 
 
@@ -173,13 +177,30 @@ ANC u_ANC(
 	    
     .audio_ref_i        (mic_data_ref),       /*input*/   
     .audio_en1_i        (mic_data_en1),       /*input*/   
-	 .audio_en2_i        (mic_data_en2),       /*input*/   
+	 .audio_en2_i        (),                   /*input*/   
 	 
     .audio_yn1_o        (audio_yn1_o),        /*output*/   
-	 .audio_yn2_o        (audio_yn2_o)         /*output*/
+	 .audio_yn2_o        ()                    /*output*/
 	 
 );
 
+ANC u2_ANC(
+	 .cyc_cnt            (),
+	 .OFZ_ok             (),                   /*output*/ 
+
+    .clk                (sys_clk    ),   
+    .rst_n              (rst_delay_n), 
+	 
+    .audio_rx_down      (audio_rx_down),   
+	    
+    .audio_ref_i        (mic_data_ref),       /*input*/   
+    .audio_en1_i        (mic_data_en2),       /*input*/   
+	 .audio_en2_i        (),       /*input*/   
+	 
+    .audio_yn1_o        (audio_yn2_o),        /*output*/   
+	 .audio_yn2_o        ()         /*output*/
+	 
+);
 
 //麦克风采集模块
 MIIS u1_MIIS(

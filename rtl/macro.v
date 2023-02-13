@@ -2,3 +2,4 @@
 //`define HARD   //是否采取硬件模拟输入信号
 
 `define OFZ  //是否使用次级通道拟合
+`define Single  //是否使用次级通道拟合
